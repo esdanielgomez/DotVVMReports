@@ -1,0 +1,44 @@
+﻿@viewModel AppDemo.ViewModels.DefaultViewModel, AppDemo
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+	<div class="page-center">
+		<div class="page-grid-top">
+			<div class="student-image"></div>
+			<h1>Person Report</h1>
+		</div>
+
+		<p>
+			<h4>Search by type:</h4>
+			<p />
+			<dot:CheckBox CheckedItems="{value: PersonTypes}"
+					  Changed="{command: UpdatePersonList()}"
+					  CheckedValue="{value: 1}" Text="Type A" />
+			<br />
+			<dot:CheckBox CheckedItems="{value: PersonTypes}"
+					  Changed="{command: UpdatePersonList()}"
+					  CheckedValue="{value: 2}" Text="Type B" />
+		</p>
+
+		<p >
+			<h4>Search by text:</h4>
+			<p />
+			ID Number:
+			<dot:TextBox Text="{value: IdSearch}" Type="Number" class="page-input" Visible="{value: SearchByTextVisible}" />
+			<dot:Button Text="Search" Click="{command: SearchById()}" class="page-button" Visible="{value: SearchByTextVisible}" />
+		<p />
+
+		<h4>Report:</h4>
+
+		<dot:GridView DataSource="{value: Persons}" class="page-grid">
+			<Columns>
+				<dot:GridViewTextColumn ValueBinding="{value: Id}" HeaderText="Id" />
+				<dot:GridViewTextColumn ValueBinding="{value: FirstName}" HeaderText="Firstname" />
+				<dot:GridViewTextColumn ValueBinding="{value: LastName}" HeaderText="LastName" />
+				<dot:GridViewTextColumn ValueBinding="{value: NamePersonType}" HeaderText="Type" />
+			</Columns>
+			<EmptyDataTemplate>
+				There are no search results.
+			</EmptyDataTemplate>
+		</dot:GridView>
+	</div>
+</dot:Content>
