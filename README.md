@@ -15,4 +15,4 @@ DotVVM is a ASP.NET framework that allows us to create web applications using th
 
 Daniel Gomez Jaramillo
 
-[twitter.com/esDanielGomez](twitter.com/esDanielGomez)
+[twitter.com/esDanielGomez](https://twitter.com/esDanielGomez)
