@@ -8,7 +8,7 @@ DotVVM is a ASP.NET framework that allows us to create web applications using th
 
 ## Tutorial:
 
-- [Reports in DotVVM with GridView, CheckBox, and TextBox controls](#).
+- [Reports in DotVVM with GridView, CheckBox, and TextBox controls](https://dev.to/dotvvm/reports-in-dotvvm-with-gridview-checkbox-and-textbox-controls-2g8n).
 - [DotVVM and ASP.NET Core: Implementing CRUD operations](https://dev.to/esdanielgomez/dotvvm-and-asp-net-core-implementing-crud-operations-l2e).
 
 ## Autor
